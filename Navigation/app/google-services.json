@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "577685154809",
+    "firebase_url": "https://navgation-98fba.firebaseio.com",
+    "project_id": "navgation-98fba",
+    "storage_bucket": "navgation-98fba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577685154809:android:9f05990331932fa2",
+        "android_client_info": {
+          "package_name": "com.gamecodeschool.navigation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577685154809-d0barq46v8hbjuqbadbj8d68ft0npgin.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gamecodeschool.navigation",
+            "certificate_hash": "6cfb38a59f30e060cece857d229fc131236de849"
+          }
+        },
+        {
+          "client_id": "577685154809-ug4cviid9e695oa5m13vc0hl3g1f7n2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gamecodeschool.navigation",
+            "certificate_hash": "e76c997a3f1674b9d6699bb1118f8872e3bf8b77"
+          }
+        },
+        {
+          "client_id": "577685154809-4putcnn8kd4hj01q5uc7brc2nbi621nt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoglgQEhYv87KRIaohIDvxVKPHqdcjRGw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577685154809-4putcnn8kd4hj01q5uc7brc2nbi621nt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

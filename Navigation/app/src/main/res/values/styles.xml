@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/lightpurple</item>
+    </style>
+
+    <string-array name="seats">
+        <item>ALL</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="places">
+        <item>Select Destination</item>
+        <item>Bisnakandi</item>
+        <item>Srimongal</item>
+        <item>Moulvibazar</item>
+        <item>Sunamgonj</item>
+        <item>Lalakhal</item>
+        <item>Beanibazar</item>
+
+    </string-array>
+</resources>

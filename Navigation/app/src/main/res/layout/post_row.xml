@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/add_btn" />
+
+        <TextView
+            android:id="@+id/post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_image"
+            android:padding="15dp"
+            android:text="Post Title"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_title"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Starts From (TK) : " />
+
+        <TextView
+            android:id="@+id/post_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt"
+            android:layout_alignBottom="@+id/txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="118dp"
+            android:layout_marginStart="118dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="(TK) : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/post_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/post_desc"
+            android:layout_alignStart="@+id/post_desc"
+            android:layout_alignTop="@+id/imageView5"
+            android:layout_below="@+id/post_title"
+            android:layout_marginLeft="126dp"
+            android:layout_marginStart="126dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Seats "
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/post_desc"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/post_desc"
+            android:layout_below="@+id/post_title"
+            android:layout_marginBottom="12dp"
+            app:srcCompat="@drawable/seat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView5"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <Button
+                    android:id="@+id/likeBtn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple"
+                    android:drawableLeft="@drawable/ic_star_border_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/likeBtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@color/purple"
+                    android:drawableLeft="@drawable/ic_star_black_24dp"
+                    android:paddingLeft="10dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/red"
+                    android:id="@+id/availability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt"
+                    android:text="Available"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/btn_avail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple"
+                    android:layout_below="@id/txt"
+                    android:text="Set Available"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

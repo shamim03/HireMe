@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.gamecodeschool.navigation.PostSingleActivity">
+
+        <ImageView
+            android:id="@+id/SinglePostImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/add_btn" />
+
+        <TextView
+            android:id="@+id/SinglePostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SinglePostImage"
+            android:padding="15dp"
+            android:text="Post Title"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/seatimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SinglePostTitle"
+            android:padding="15dp"
+            app:srcCompat="@drawable/seat" />
+
+        <TextView
+            android:id="@+id/SinglePostSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/SinglePostTitle"
+            android:layout_toEndOf="@+id/seatimage"
+            android:layout_toRightOf="@+id/seatimage"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="Seats "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SinglePostRentPerHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/SinglePostTitle"
+            android:layout_toEndOf="@+id/SinglePostSeat"
+            android:layout_toRightOf="@+id/SinglePostSeat"
+            android:paddingBottom="15dp"
+            android:paddingLeft="100dp"
+            android:paddingTop="15dp"
+            android:text="Local Rent Per Hour(Tk) :" />
+
+        <TextView
+            android:id="@+id/perHourCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/SinglePostTitle"
+            android:layout_toEndOf="@+id/SinglePostRentPerHour"
+            android:layout_toRightOf="@+id/SinglePostRentPerHour"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:text="Seat "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SinglePostRentPerDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/SinglePostSeat"
+            android:padding="15dp"
+            android:text="Local Rent Per Day(Tk) :" />
+
+        <TextView
+            android:id="@+id/perDayCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SinglePostSeat"
+            android:layout_toEndOf="@+id/SinglePostRentPerDay"
+            android:layout_toRightOf="@+id/SinglePostRentPerDay"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:text="Tk "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SinglePostRentPerDayOutside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/SinglePostRentPerDay"
+            android:padding="15dp"
+            android:text="Local Rent Per Day Outside(Tk) :" />
+
+        <TextView
+            android:id="@+id/perDayOutsideCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SinglePostRentPerDay"
+            android:layout_toEndOf="@+id/SinglePostRentPerDayOutside"
+            android:layout_toRightOf="@+id/SinglePostRentPerDayOutside"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:text="Tk "
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/place_spn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/SinglePostRentPerDayOutside"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/grey"
+            android:entries="@array/places"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/place_spn"
+            android:gravity="center"
+            android:paddingTop="15dp"
+
+            android:text="If you want to select any custom location please contact with the car owner"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Fare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="Cost Calculator"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/showClc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Fare"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/contactbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showClc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/purple"
+            android:gravity="center"
+            android:text="Contact"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/deletebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/purple"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

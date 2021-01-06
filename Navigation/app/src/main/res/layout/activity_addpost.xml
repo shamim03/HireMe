@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="950dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_addpost"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginBottom="10dp"
+        tools:context="com.gamecodeschool.navigation.AddPost">
+
+
+        <ImageButton
+            android:id="@+id/SelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/add_btn" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_below="@+id/SelectImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/grey"
+            android:ems="10"
+            android:hint="Title"
+            android:paddingLeft="10dp"
+            android:inputType="textPersonName"
+            android:textSize="16dp" />
+
+
+        <EditText
+            android:id="@+id/etSeats"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+
+            android:layout_alignLeft="@+id/etTitle"
+            android:layout_alignStart="@+id/etTitle"
+            android:layout_below="@+id/etTitle"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/grey"
+
+            android:ems="10"
+            android:hint="Seats"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etRentPerHour"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_below="@+id/etSeats"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/grey"
+            android:ems="10"
+            android:hint="Rent Per Hour"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etRentPerDayLocal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+
+            android:layout_below="@+id/etRentPerHour"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/grey"
+            android:ems="10"
+            android:hint="Rent Per Day (Local)"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etRentPerDayOutside"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_below="@+id/etRentPerDayLocal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/grey"
+            android:ems="10"
+            android:hint="Rent Per Day (Outside)"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etRentPerKm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/etRentPerDayOutside"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/grey"
+            android:ems="10"
+            android:hint="Rent Per KM"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+
+            android:layout_below="@+id/etRentPerKm"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/grey"
+            android:ems="10"
+            android:hint="Contact Number"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:textSize="16dp" />
+
+
+        <Button
+            android:id="@+id/bAddPost"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/etPhoneNo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/purple"
+            android:text="Add"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+    </ScrollView>
